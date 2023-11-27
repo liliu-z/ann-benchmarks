@@ -578,6 +578,7 @@ DATASETS: Dict[str, Callable[[str], None]] = {
     "glove-50-angular": lambda out_fn: glove(out_fn, 50),
     "glove-100-angular": lambda out_fn: glove(out_fn, 100),
     "glove-200-angular": lambda out_fn: glove(out_fn, 200),
+    "openai500k-1536-angular": None,
     "mnist-784-euclidean": mnist,
     "random-xs-20-euclidean": lambda out_fn: random_float(out_fn, 20, 10000, 100, "euclidean"),
     "random-s-100-euclidean": lambda out_fn: random_float(out_fn, 100, 100000, 1000, "euclidean"),
